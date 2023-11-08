@@ -1,0 +1,57 @@
+api key:AIzaSyCtREAc_6Mv20M3dc0_YH1v4lekVECnAMA
+https://youtube.googleapis.com/youtube/v3/channels?part=contentDetails&id=UC26G--WPTWML5bTN50vrbtw&key=[AIzaSyCtREAc_6Mv20M3dc0_YH1v4lekVECnAMA] 
+
+real couple:
+   fetch key:GET https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=UC26G--WPTWML5bTN50vrbtw&key=[YOUR_API_KEY] HTTP/1.1
+   id: UC26G--WPTWML5bTN50vrbtw
+prime video:
+   fetch key:GET https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=UCQJWtTnAHhEG5w4uN0udnUQ&key=
+   id: UCQJWtTnAHhEG5w4uN0udnUQ
+barbell:
+   fetch key:GET https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=UCs55OZ6PkvIjwtyyqEFk8JQ&key=[YOUR_API_KEY] HTTP/1.1
+
+   id: UCs55OZ6PkvIjwtyyqEFk8JQ
+think school:
+   fetch key:GET https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=UCKZozRVHRYsYHGEyNKuhhdA&key=[YOUR_API_KEY] HTTP/1.1
+
+   id: UCKZozRVHRYsYHGEyNKuhhdA
+thyview:
+   GET https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=UC-qTldS8DNIGOfIVc0G8t-w&key=[YOUR_API_KEY] HTTP/1.1
+   id:UC-qTldS8DNIGOfIVc0G8t-w
+sX3idD5lLBA
+"embedHtml": <iframe width='100%" height="100%" src="//www.youtube.com/embed/AgTnb2iCSyk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscree</iframe>
+        "embedHtml": <iframe  width='100%" height="100%" src="//www.youtube.com/embed/" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen\u003e\u003c/iframe\u003e"
+
+
+ https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet%2C%20contentDetails&maxResults=10&playlistId=${playlistids[x]}&key=AIzaSyCtREAc_6Mv20M3dc0_YH1v4lekVECnAMA
+https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails%2C%20snippet%2Cplayer%20%2Cstatistics&id=${playlistvidids}&key=AIzaSyCtREAc_6Mv20M3dc0_YH1v4lekVECnAMA
+
+
+   
+
+   `<div class="comments">
+                        <div style="width:56px; height:40px; padding:0px 16px 0px 0px">
+                            <img class="commentimage" src="">
+
+                        </div>
+                        <div style="flex:1; height:100%; border:1px solid white">
+                            <div style="width:100%; height:22px; padding-bottom: 2px;">
+                                <span class="commentsubname">barbell pitch</span>
+                                <span class="commenttime">8 hpurs ago</span>
+                            </div>
+                            <div class="commentdescription">
+
+                            </div>
+                            <div style="width:100%; height:38px; border:1px solid white; padding-top:4px; display: flex; align-items: center;">
+                                  <div style="width:55px; height:100%; display: flex; padding:8px;">
+                                    <img src="Icons/smallliked.png">
+                                    <div class="likedcomments">5</div>
+
+                                </div>
+                                <img src="Icons/smalldislike.png">
+                                <div class="replybutton">REPLY</div>
+                            </div>
+
+                        </div>
+
+                    </div>`

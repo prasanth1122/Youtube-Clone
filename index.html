@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, 
+         user-scalable=0"
+        />
+        <title>Youtube Clone</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <div id="lines3" style="width:40px; height:40px; padding:8px;"><img src="Icons/hamburgerlines.svg" alt="logo"></div>
+                    <div style="width:120px; height:40px; padding:10px 14px 10px 16px; cursor: pointer; "><img herf='#' src="Icons/Youtube-Logo.svg" alt="logo"></div>
+                </div>
+                <div class="searchbar">
+                    <input type="text" class="input1" placeholder="Search" value="">
+
+                    <div class="search-bar"><img src="Icons/search.svg" alt="logo"></div>
+                    <img style="margin-left: 4px;"src="Icons/mic.svg" alt="logo"></div>
+                </div>
+                <div class="account">
+                    <div class="accounticons"><img src="Icons/create.svg" alt="logo"></div>
+                    <div class="accounticons"><img src="Icons/apps.svg" alt="logo"></div>
+                    <div class="accounticons"><img src="Icons/notifications.svg" alt="logo"></div>
+                    <div class="accounticons2"><img src="Icons/Profile-pic.svg" alt="logo"></div>
+                </div>
+            </nav>
+            
+        </header>
+        <section class="contentpage">
+           <div class="left-bar">
+            <div class="home-menu" style="width:224px; height:144px; display: inline-block; padding:12px 0px 12px 0px; border-bottom: 1px solid #303030;">
+                <div class="home-buttons">
+                    <img src="Icons/Icon.svg" alt="logo">
+                    <p class="names">Home</p>
+                </div>
+                <div class="home-buttons">
+                    <img src="Icons/explore.svg" alt="logo">
+                    <p class="names">Explore</p>
+                </div>
+                <div class="home-buttons">
+                    <img src="Icons/subsc.svg" alt="logo">
+                    <p class="names">Subscriptions</p>
+                </div>
+            </div>
+            <div class="library-menu"  style="width:224px; height:266px; display:inline-block; padding:12px 0px 12px 0px;display: inline-block;border-bottom: 1px solid #303030;">
+                <div class="home-buttons">
+                    <img src="Icons/library.svg" alt="logo">
+                    <p class="names">Library</p>
+                </div>
+                <div class="home-buttons">
+                    <img src="Icons/history.svg" alt="logo">
+                    <p class="names">History</p>
+                </div>
+                <div class="home-buttons">
+                    <img src="Icons/yourVideos.svg" alt="logo">
+                    <p class="names">Your Videos</p>
+                </div>
+                <div class="home-buttons">
+                    <img src="Icons/later.svg" alt="logo">
+                    <p class="names">Watch Later</p>
+                </div>
+                <div class="home-buttons">
+                    <img src="Icons/likedvid.svg" alt="logo">
+                    <p class="names">Liked Videos</p>
+                </div>
+                <div class="home-buttons" id="show-up-down">
+                    <img id="up-down" src="Icons/smore.svg" alt="logo">
+                    <p class="names">Show More</p>
+                </div>
+                <div class="home-buttons aaa fontawe">
+                    <i class="fa-solid fa-list" style="color: #ffffff;"></i>
+                    <p class="names">My List 1</p>
+                </div>
+                <div class="home-buttons aaa fontawe">
+                    <i class="fa-solid fa-list" style="color: #ffffff; "></i>
+                    <p class="names">My List 2</p>
+                </div>
+                <div class="home-buttons aaa fontawe">
+                    <i class="fa-solid fa-list" style="color: #ffffff; "></i>
+                    <p class="names">My List 2</p>
+                </div>
+                <div class="home-buttons aaa fontawe">
+                    <i class="fa-solid fa-list" style="color: #ffffff; "></i>
+                    <p class="names">My List 3</p>
+                </div>
+                <div class="home-buttons aaa" id="show-down-down">
+                    <img id="up-down" style="transform:rotate(180deg)" src="Icons/smore.svg" alt="logo">
+                    <p class="names">Show Less</p>
+                </div>
+            </div>
+            <div class="subscriptions" style="width:224px; height:224px; display: inline-block; padding:12px 0px 12px 0px;border-bottom: 1px solid #303030;">
+                <div class="title-names">
+                    <p class="para1">SUBSCRIPTIONS</p>
+                    
+                </div>
+                <div class="sub-buttons">
+                    <img id="sub1" class="subs"src="Icons/premium.svg" alt="logo">
+                    <p class="names" id="subname1">Youtube Premium</p>
+                </div>
+                <div class="sub-buttons">
+                    <img id="sub2" class="subs"src="Icons/premium.svg" alt="logo">
+                    <p class="names" id="subname2">Youtube Premium</p>
+                </div>
+                <div class="sub-buttons">
+                    <img id="sub3" class="subs"src="Icons/premium.svg" alt="logo">
+                    <p class="names" id="subname3">Youtube Premium</p>
+                </div>
+                <div class="home-buttons" id="show-up-up">
+                    <img id="up-down" src="Icons/smore.svg" alt="logo">
+                    <p class="names">Show More</p>
+                </div>
+                <div class="sub-buttons bbbb">
+                    <img id="sub4" class="subs"src="Icons/premium.svg" alt="logo">
+                    <p class="names" id="subname4">Youtube Premium</p>
+                </div>
+                <div class="sub-buttons bbbb">
+                    <img id="sub5" class="subs"src="Icons/premium.svg" alt="logo">
+                    <p class="names" id="subname5">Youtube Premium</p>
+                </div>
+                <div class="home-buttons bbbb" id="show-down-up">
+                    <img id="up-down" style="transform:rotate(180deg)" src="Icons/smore.svg" alt="logo">
+                    <p class="names">Show Less</p>
+                </div>
+
+            </div>
+            <div class="more-from" style="width:224px; height:346px; display: inline-block; padding:12px 0px 12px 0px;border-bottom: 1px solid #303030;">
+                <div class="title-names">
+                    <p class="para1">MORE FROM YOUTUBE</p>
+                    
+                </div>
+                <div class="home-buttons">
+                    <img src="Icons/premium.svg" alt="logo">
+                    <p class="names">Youtube Premium</p>
+                </div>
+                <div class="home-buttons">
+                    <img src="Icons/Gaming.svg" alt="logo">
+                    <p class="names">Gaming</p>
+                </div>
+                <div class="home-buttons">
+                    <img src="Icons/live.svg" alt="logo">
+                    <p class="names">Live</p>
+                </div>
+                <div class="home-buttons fontawe">
+                    <i class="fa-solid fa-music" style="color: #ffffff;"></i>
+                    <p class="names">Music</p>
+                </div>
+                <div class="home-buttons fontawe">
+                    <i class="fa-solid fa-film" style="color: #ffffff;"></i>
+                    <p class="names">Films</p>
+                </div>
+                <div class="home-buttons fontawe">
+                    <i class="fa-regular fa-lightbulb" style="color: #ffffff; margin-right: 4px;"></i>
+                    <p class="names">Learning</p>
+                </div>
+                <div class="home-buttons fontawe">
+                    <i class="fa-solid fa-trophy" style="color: #ffffff; "></i>
+                    <p class="names">Sport</p>
+                </div>
+                
+            </div>
+            <div class="explore" style="width:224px; height:184px; display: inline-block; padding:12px 0px 12px 0px;border-bottom: 1px solid #303030;">
+                <div class="home-buttons fontawe">
+                    <i class="fa-solid fa-gear" style="color: #ffffff; margin-top: 2px; "></i>
+                    <p class="names" >Settings</p>
+                </div>
+                <div class="home-buttons fontawe">
+                    <i class="fa-regular fa-flag" style="color: #ffffff; margin-top: 2px;"></i>
+                    <p class="names">Report history</p>
+                </div>
+                <div class="home-buttons fontawe">
+                    <i class="fa-solid fa-circle-question" style="color: #ffffff; margin-top: 2px;"></i>
+                    <p class="names">Help</p>
+                </div>
+                <div class="home-buttons fontawe">
+                    <i class="fa-solid fa-comment-dots" style="color: #ffffff; margin-top: 2px;"></i>
+                    <p class="names">Send feedback</p>
+                </div>
+            </div>
+           
+            <div class="about" style="width:224px; height:300px; display: inline-block; padding:12px 0px 12px 0px;">
+                <div style="margin-bottom: 15px; margin-left: 5px;">
+                    <div>
+                    <span class="foot">About</span>
+                    <span class="foot">Press</span>
+                    <span class="foot">Copyright</span>
+                    </div>
+                    <div>
+                        <span class="foot">Contact us</span>
+                        <span class="foot">Creator</span>
+                        <span class="foot">Advertize</span>
+                        </div>
+                    <div>
+                            <span class="foot">Developers</span>
+                           
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px; margin-left: 5px;">
+                    <div>
+                        <span class="foot">Terms</span>
+                        <span class="foot">Privacy</span>
+                        <span class="foot">Policy & Safety</span>
+                        </div>
+                        <div>
+                            <span class="foot">How Youtube Works</span>
+                            
+                            </div>
+                        <div>
+                                <span class="foot">Test New features</span>
+                               
+                        </div>
+                </div>
+                <div style="margin-bottom: 10px; margin-left: 5px;"><span class="foot1">© 2023 Google LLC</span></div>
+            </div>
+            
+
+           </div>
+           <div class="maincontentpage">
+            <div class="all-items">
+                
+                <div style="width:76px; height:56px; padding:12px 12px 12px 24px; display: inline-block;">
+                    <div style="width:41px; height:32px; border-radius: 32px; padding:8px 12px 8px 12px; background-color: #ffffff;border:0.3px solid #303030"><p class="allpara" style="color:#030303">All</p></div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+                <div  class="items-items">
+                    <div class="items-box">
+                        <p class="allpara">Item</p>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="videocontent">
+                <a href="videoplayer.html" class="viditems iframes1" >
+                      <div style="width:100%; height:155px; position: relative;">
+                      <img style="width:100%; height:155px; " id="vid1" src="" class="thumbnail">
+                      <div class="vidplayertime">2366</div>
+                    </div>
+                      <div style="width:100%; flex:1;; display:flex; align-items: center;">
+                        <div style="height:100%; width:55px; padding:12px 12px 24px 0px;">
+                             <img class="subimg1" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                        </div>
+                        <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                            <div class="title1">njnsjnsnsnv</div>
+                            <div id="durationviews">
+                                <p class="vidsubname1"></p>
+                                <p id="viewsduration1" class="durationtime"></p>
+                            </div>
+
+                        </div> 
+                      </div>
+
+                    </a>
+                <a href="videoplayer.html" class="viditems iframes1">
+                    <div style="width:100%; height:155px; position: relative;">
+                        <img style="width:100%; height:155px; " id="vid1" src="" class="thumbnail">
+                        <div class="vidplayertime">2366</div>
+                      </div>
+                      <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                        <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                             <img class="subimg1" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                        </div>
+                        <div style="height:100%; flex:1; display: flex; align-items: center; flex-direction: column;">
+                            <div class="title1"></div>
+                            <div id="durationviews">
+                                <p class="vidsubname1"></p>
+                                <p id="viewsduration2"  class="durationtime"></p>
+                            </div>
+
+                        </div> 
+                      </div>
+
+                    </a>
+                <a href="videoplayer.html" class="viditems iframes1">
+                    <div style="width:100%; height:155px; position: relative;">
+                        <img style="width:100%; height:155px; " id="vid1" src="" class="thumbnail">
+                        <div class="vidplayertime">2366</div>
+                      </div>
+                      <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                        <div style="height:100%; width:55px; padding:12px 12px 24px 0px;">
+                             <img class="subimg1" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                        </div>
+                        <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                            <div class="title1"></div>
+                            <div id="durationviews">
+                                <div class="vidsubname1">fbbbb</div>
+                                <p id="viewsduration3"  class="durationtime"></p>
+                            </div>
+
+                        </div> 
+                      </div>
+
+                    </a>
+                
+                <a href="videoplayer.html" class="viditems iframes1">
+                    <div style="width:100%; height:155px; position: relative;">
+                        <img style="width:100%; height:155px; " id="vid1" src="" class="thumbnail">
+                        <div class="vidplayertime">2366</div>
+                      </div>
+                      <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                        <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                             <img class="subimg1" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                        </div>
+                        <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                            <div class="title1"></div>
+                            <div id="durationviews">
+                                <p class="vidsubname1"></p>
+                                <p id="viewsduration4"  class="durationtime"></p>
+                            </div>
+
+                        </div> 
+                      </div>
+
+                    </a>
+                <a href="videoplayer.html" class="viditems iframes1">
+                    <div style="width:100%; height:155px; position: relative;">
+                        <img style="width:100%; height:155px; " id="vid1" src="" class="thumbnail">
+                        <div class="vidplayertime">2366</div>
+                      </div>
+                      <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                        <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                             <img class="subimg1" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                        </div>
+                        <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                            <div class="title1"></div>
+                            <div id="durationviews">
+                                <p class="vidsubname1"></p>
+                                <p id="viewsduration4"  class="durationtime"></p>
+                            </div>
+
+                        </div> 
+                      </div>
+
+                    </a>
+                <a href="videoplayer.html" class="viditems iframes2">
+                    <div style="width:100%; height:155px; position: relative;">
+                        <img style="width:100%; height:155px; " id="vid2" src="" class="thumbnail2">
+                        <div class="vidplayertime1">2366</div>
+                      </div>
+                    <div style="width:100%; flex:1; display:flex; align-items: center;">
+                      <div style="height:100%; width:55px; padding:12px 12px 24px 0px;">
+                           <img class="subimg2" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                      </div>
+                      <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                          <div class="title2">njnsjnsnsnv</div>
+                          <div id="durationviews">
+                              <p class="vidsubname2"></p>
+                              <p id="viewsduration2" class="durationtime2"></p>
+                          </div>
+
+                      </div> 
+                    </div>
+
+                </a>
+              <a href="videoplayer.html" class="viditems iframes2">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid2" src="" class="thumbnail2">
+                    <div class="vidplayertime1">2366</div>
+                  </div>
+                <div style="width:100%; flex:1; display:flex; align-items: center;">
+                  <div style="height:100%; width:55px; padding:12px 12px 24px 0px;">
+                       <img class="subimg2" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                  </div>
+                  <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                      <div class="title2">njnsjnsnsnv</div>
+                      <div id="durationviews">
+                          <p class="vidsubname2"></p>
+                          <p id="viewsduration2" class="durationtime2"></p>
+                      </div>
+
+                  </div> 
+                </div>
+
+            </a>
+          
+              <a href="videoplayer.html"class="viditems iframes2">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid2" src="" class="thumbnail2">
+                    <div class="vidplayertime1">2366</div>
+                  </div>
+                    <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                      <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                           <img class="subimg2" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                      </div>
+                      <div style="height:100%; flex:1; display: flex; align-items: center; flex-direction: column;">
+                          <div class="title2"></div>
+                          <div id="durationviews">
+                              <p class="vidsubname2"></p>
+                              <p id="viewsduration2"  class="durationtime2"></p>
+                          </div>
+
+                      </div> 
+                    </div>
+
+                </a>
+              <a href="videoplayer.html" class="viditems iframes2">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid2" src="" class="thumbnail2">
+                    <div class="vidplayertime1">2366</div>
+                  </div>
+                    <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                      <div style="height:100%; width:55px; padding:12px 12px 24px 0px;">
+                           <img class="subimg2" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                      </div>
+                      <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                          <div class="title2"></div>
+                          <div id="durationviews">
+                              <div class="vidsubname2"></div>
+                              <p id="viewsduration3"  class="durationtime2"></p>
+                          </div>
+
+                      </div> 
+                    </div>
+
+                </a>  
+              <a href="videoplayer.html" class="viditems iframes2">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid2" src="" class="thumbnail2">
+                    <div class="vidplayertime">7:22</div>
+                  </div>
+                  <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg2" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1; display: flex; align-items: center; flex-direction: column;">
+                        <div class="title2"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname2"></div>
+                            <p id="viewsduration3"  class="durationtime2"></p>
+                        </div>
+
+                    </div> 
+            </div>
+               
+        </a>
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1; display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a> 
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1; display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a> 
+            
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a>  
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1;display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px;">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a> 
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a>   
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a>  
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a>  
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a>  
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a>  
+            <a href="videoplayer.html" class="viditems iframes3">
+                <div style="width:100%; height:155px; position: relative;">
+                    <img style="width:100%; height:155px; " id="vid3" src="" class="thumbnail3">
+                    <div class="vidplayertime2">2366</div>
+                  </div>
+                  <div style="width:100%; flex:1;  display:flex; align-items: center;">
+                    <div style="height:100%; width:55px; padding:12px 12px 24px 0px; ">
+                         <img class="subimg3" src="" style="width: 36px; height:36px; border-radius: 24px;">
+                    </div>
+                    <div style="height:100%; flex:1;  display: flex; align-items: center; flex-direction: column;">
+                        <div class="title3"></div>
+                        <div id="durationviews">
+                            <div class="vidsubname3"></div>
+                            <p id="viewsduration3"  class="durationtime3"></p>
+                        </div>
+
+                    </div> 
+                  </div>
+
+                </a> 
+            </div>
+
+           </div>
+           <div class="subscriberpage" id="sspg">
+            <div style="width:100%; height:100%; overflow-y: scroll;" id="spg">
+            <div class="subdataimg">
+                <img src="Icons/Channel-Cover.png" style="width:100%; height:192px; ">
+                <div class="subscriberdata">
+                    <div class="subscriberdetails">
+                        <div class="subnameimage">
+                            <div style="width:104px; height:100%; padding:0px 24px 0px 0px; ">
+                                <img src="" id="subscriberprofile" style="width:80px; height:100%; border-radius: 50%; ">
+
+                            </div>
+                            <div style="width:250px; height:100%; padding:18px 0px 18px 0px; ">
+                                <p id="subsname11">Barbell Pitch Meetings</p>
+                                <p id="subscount">bajbacj</p>
+                            </div>
+
+                        </div>
+                        <div class="button1">
+                            <button>SUBSCRIBES</button>
+                        </div>
+                    </div>
+                    
+                    <div class="subhomebuttons">
+                        <div class="buttons11" style="width:104px; height:100%">HOME</div>
+                        <div class="buttons11" style="width:113px; height:100%">VIDEOS</div>
+                        <div class="buttons11" style="width:136px; height:100%">PLAYLISTS</div>
+                        <div class="buttons11" style="width:148px; height:100%">COMMUNITY</div>
+                        <div class="buttons11" style="width:137px; height:100%">CHANNELS</div>
+                        <div class="buttons11" style="width:110px; height:100%">ABOUT</div>
+                        <div class="searchbar2">
+                            <img src="Icons/search2.svg">
+                            <img src="Icons/Btn2.svg">
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="playlistsub">
+                <div class="iframetab">
+                    <div class="mainvideo">
+                        <iframe width='100%' height="100%" src="//www.youtube.com/embed/AgTnb2iCSyk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="mainviddis">
+                        <p id="maintitle"></p>
+                        <p id="vidviews"></p>
+                        <p id="viddescription"></p>
+                    </div>
+                </div>
+                <div class="vidlisttab">
+                    <div class="search21">
+                        <div class="search21bar">Search On '21</div>
+                        <div class="playall">
+                            <img src="Icons/playall.png">
+                            <div style="width: 79px; height:24px; padding:3px 0px 2px 8px; " class="plal">Play All</div>
+                        </div>
+                    </div>
+                    <div class="playlistvids">
+                        <div class="vid5">
+                            <img class="imgplst"src="" style="width:100%; height:118px">
+                            <div style="width:100%; flex:1;">
+                                <div class="vid5title"></div>
+                                <div class="vid5sub"></div>
+                                <div class="vid5views"></div>
+                            </div> 
+                        </div>
+                        <div class="vid5">
+                            <img class="imgplst"src="" style="width:100%; height:118px">
+                            <div style="width:100%; flex:1; ">
+                                <div class="vid5title"></div>
+                                <div class="vid5sub"></div>
+                                <div class="vid5views"></div>
+                            </div> 
+                        </div>
+                        <div class="vid5">
+                            <img class="imgplst"src="" style="width:100%; height:118px">
+                            <div style="width:100%; flex:1; ">
+                                <div class="vid5title"></div>
+                                <div class="vid5sub"></div>
+                                <div class="vid5views"></div>
+                            </div> 
+                        </div>
+                        <div class="vid5">
+                            <img class="imgplst"src="" style="width:100%; height:118px">
+                            <div style="width:100%; flex:1; ">
+                                <div class="vid5title"></div>
+                                <div class="vid5sub"></div>
+                                <div class="vid5views"></div>
+                            </div> 
+                        </div>
+                        <div class="vid5">
+                            <img class="imgplst"src="" style="width:100%; height:118px">
+                            <div style="width:100%; flex:1; ">
+                                <div class="vid5title"></div>
+                                <div class="vid5sub"></div>
+                                <div class="vid5views"></div>
+                            </div> 
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+           </div>
+        </section>
+        <script src="youtube1.js">
+        </script>
+        </body>
+</html>

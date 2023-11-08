@@ -1,0 +1,509 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: ''Roboto', sans-serif';
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width:100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:56px;
+    background-color: #212121;
+    padding:8px 16px 8px 16px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#lines3:hover{
+    cursor: pointer;
+    background-color: #121212;
+    border-radius: 50%;
+}
+.searchbar{
+    width:470px;
+    height:40px;
+    display: flex;
+    align-items: center;
+}
+.input1{
+    width: 70%;
+height: 40px;
+border:none;
+background-color: #121212;
+padding:6px 2px 6px 2px;
+border-radius: 2px 0px 0px 2px;
+color:white;
+}
+.input1::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+.search-bar{
+    width: 62px;
+height: 40px;
+padding-top: 6px;
+padding-left: 18px;
+border-radius: 0px 2px 2px 0px;
+border: 1px solid #303030;
+}
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 204px;
+height: 40px;
+}
+.accounticons{
+    width:40px;
+    height:40px;
+    padding:8px;
+}
+.accounticons:hover{
+    cursor: pointer;
+    background-color: #303030;
+    border-radius: 50%;
+}
+.accounticons2{
+    width:60px;
+    height:40px;
+    padding:4px 14px 4px 14px;
+}
+.maincontent{
+    width:100%;
+    flex:1;
+    background-color: #181818;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.videoplayer{
+    width: 688px;
+height: 100%;
+
+padding: 24px 24px 0px 24px;
+overflow-y: scroll;
+}
+.iframeplayer{
+    width: 100%;
+height: 360px;
+
+}
+.iframetitles{
+    width:100%;
+    height:95px;
+     color:white;
+    
+}
+.titleframe{
+    width: 100%;
+height: 65px;
+padding: 25px 0px 2px 0px;
+font-family: 'Roboto';
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.01em;
+text-align: left;
+color: white;
+
+}
+.subsframe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:40px;
+   
+}
+.totalsubs{
+    width: 210px;
+height: 100%;
+padding: 12px 0px 12px 0px;
+font-family: 'Roboto';
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+color:#AAAAAA;
+}
+.likes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex:1;
+    height: 100%;
+    
+}
+.likebutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75px;
+height: 100%;
+padding: 2px 0px 2px 0px; 
+
+}
+#nolikes{
+    font-family: 'Roboto';
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+color:white;
+}
+.dislikebutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75px;
+height: 100%;
+padding: 2px 0px 2px 0px;
+
+}
+#nodislikes{
+    font-family: 'Roboto';
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+color:white;
+}
+.subsphoto{
+    width: 100%;
+height: 170px;
+padding: 0px 0px 16px 0px;
+
+}
+.channeldetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+height: 67px;
+padding: 16px 0px 0px 0px;
+
+}
+.subsimg{
+    width: 250px;
+height: 51px;
+display: flex;
+align-items: center;
+}
+#subsctitle{
+    font-family: 'Roboto';
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+color:white;
+}
+#subsccount{
+    font-family: 'Roboto';
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+color:grey;
+}
+button{
+    width: 116px;
+height: 36px;
+padding: 10px 16px 10px 16px;
+border-radius: 2px;
+color:white;
+background-color: #CC0000;
+border:none;
+font-family: 'Roboto';
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+border-radius: 2px;
+}
+#videodescription{
+    width: 100%;
+height: 75px;
+
+padding: 12px 0px 0px 64px;
+color:white;
+font-family: 'Roboto';
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#showmore{
+    width: 100%;
+height: 12px;
+color:grey;
+padding: 0px 0px 0px 64px;
+font-family: 'Roboto';
+font-size: 12px;
+font-weight: 700;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#showmore:hover{
+    text-decoration: underline;
+    color:rgb(116, 104, 104);
+    cursor: pointer;
+}
+.commentsnumber{
+    width: 100%;
+height: 144px;
+padding: 24px 0px 32px 0px;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+#nocomments{
+    width: 142px;
+height: 100%;
+padding: 1px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color:white;
+}
+#sortby{
+    width:88px;
+    height:100%;
+   
+}
+.input2{
+    width:100%;
+    height:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color:white;
+}
+.comments{
+    width: 100%;
+height: 100%;
+padding: 0px 0px 16px 0px;
+
+display: flex;
+align-items: start;
+}
+.commentimage{
+    width: 40px;
+height: 40px;
+border-radius: 40px;
+
+}
+
+.commentsubname,.replysubname{
+    font-family: 'Roboto';
+font-size: 13px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color:white;
+}
+.commenttime, .replytime{
+    font-family: 'Roboto';
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color:#AAAAAA;
+}
+.commentdescription, .replydescription{
+    width:100%;
+    height:24px;
+    padding-top: 2px;
+    color:white;
+    font-family: 'Roboto';
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.likedcomments, .likedreplycount{
+    padding-left:7px;
+    font-family: 'Roboto';
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color:#AAAAAA;
+}
+.replybutton1,.replybutton2, .replybutton3{
+    width: 120px;
+height: 100%;
+padding: 8px 16px 8px 16px;
+color:grey;
+font-family: 'Roboto';
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.commentimage1{
+    width: 25px;
+height: 25px;
+border-radius: 50%;
+
+}
+.extravideos{
+    width: 426px;
+height: 100%;
+overflow-y: scroll;
+
+padding:24px 24px 0px 0px;
+}
+.allbuttons{
+    width:100%;
+    height:51px;
+    padding:1px 12px 2px 0px;
+    display: flex;
+    align-items: center;
+}
+#allb{
+    width: 40px;
+height: 32px;
+padding: 8px 12px 8px 12px;
+border-radius: 32px;
+font-family: 'Roboto';
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+background-color: white;
+color:black
+
+}
+#allsubsname{
+    margin-left:10px;
+    width: 250px;
+height:32px;
+padding: 8px 12px 8px 12px;
+border-radius: 32px;
+border: 0.3px solid #303030;
+background-color: #AAAAAA;
+color:black;
+font-family: 'Roboto';
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: center;
+}
+.vidplayervids{
+    width:100%;
+    height:102px;
+    padding-top: 8px;
+
+    display: flex;
+    align-items: center;
+}
+.vidplayerimg, .vidplayerimg1, .vidplayerimg2{
+    width:100%;
+    height:100%;
+}
+.vidplayertime, .vidplayertime1, .vidplayertime2{
+    width: 33px;
+height: 18px;
+padding: 3px 4px 3px 4px;
+font-family: 'Roboto';
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0em;
+text-align: left;
+color:white;
+
+background-color: black;
+position: absolute;
+bottom: 2px;
+right:2px;
+}
+.vidplayertitle, .vidplayertitle1, .vidplayertitle2{
+    width:100%;
+    height:40px;
+    font-family: 'Roboto';
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color:white;
+}
+.vidplayersubname, .vidplayersubname1, .vidplayersubname2{
+    width:100%;
+    height:18px;
+    font-family: 'Roboto';
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color:grey;
+}
+.vidplayerviews, .vidplayerviews1, .vidplayerviews2{
+    width:100%;
+    height:18px;
+    font-family: 'Roboto';
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color:grey;
+}
+.replies{
+   width:100%;
+   height:100px;
+   padding-bottom:16px;
+   display: flex;
+   align-items: start;
+
+}
+.replyimage{
+    width:25px;
+    height:25px;
+     border-radius: 50%;
+}
